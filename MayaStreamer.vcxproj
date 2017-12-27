@@ -113,15 +113,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="ComLib.h" />
-    <ClInclude Include="DirectX.h" />
-    <ClInclude Include="Includes.h" />
-    <ClInclude Include="Linker.h" />
-    <ClInclude Include="TextureHandler.h" />
-    <ClInclude Include="WICTextureLoader.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -13,10 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{af319393-af49-4fb0-8770-8f4d9b0e8bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data Streaming">
+      <UniqueIdentifier>{902263fb-b921-45ae-9022-861dd97778bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Textures">
+      <UniqueIdentifier>{8e2ac39f-cc9b-4b21-9331-2ef42b15ee0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectX.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Linker.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ComLib.h">
+      <Filter>Header Files\Data Streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureHandler.h">
+      <Filter>Header Files\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="WICTextureLoader.h">
+      <Filter>Header Files\Textures</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
