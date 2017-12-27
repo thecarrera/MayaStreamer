@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(4): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(4): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+  MayaStreamer.vcxproj -> C:\Users\jonte\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaStreamer.exe
+  MayaStreamer.vcxproj -> C:\Users\jonte\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaStreamer.pdb (Partial PDB)

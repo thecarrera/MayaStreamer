@@ -23,9 +23,8 @@ void renderChangeCallback(const MString &str, void *clientData)
 		forwardVec = cam.viewDirection(MSpace::kObject);
 		upVec = cam.upDirection(MSpace::kObject);
 		rightVec = cam.rightDirection(MSpace::kObject);
-		cam.
 
-			MGlobal::displayInfo("forward");
+		MGlobal::displayInfo("forward");
 		MGlobal::displayInfo(MString() + forwardVec.x);
 		MGlobal::displayInfo(MString() + forwardVec.y);
 		MGlobal::displayInfo(MString() + forwardVec.z);

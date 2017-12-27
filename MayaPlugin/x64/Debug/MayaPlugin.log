@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayaplugin\main.cpp(66): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayaplugin\main.cpp(97): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayaplugin\main.cpp(108): warning C4390: ';': empty controlled statement found; is this the intent?
+     Creating library C:\Users\jonte\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaPlugin.lib and object C:\Users\jonte\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaPlugin.exp
+  MayaPlugin.vcxproj -> C:\Users\jonte\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaPlugin.dll
+  MayaPlugin.vcxproj -> C:\Users\jonte\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaPlugin.pdb (Partial PDB)
