@@ -1,9 +1,25 @@
-﻿  main.cpp
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(4): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(4): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(123): error C2084: function 'int wWinMain(HINSTANCE,HINSTANCE,LPWSTR,int)' already has a body
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(9): note: see previous definition of 'wWinMain'
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(162): error C2084: function 'HWND InitWindow(HMODULE)' already has a body
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(48): note: see previous definition of 'InitWindow'
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(208): error C2084: function 'LRESULT WndProc(HWND,UINT,WPARAM,LPARAM)' already has a body
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(94): note: see previous definition of 'WndProc'
+﻿D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainPixelShader.hlsl(28,21-49): warning X3206: 'reflect': implicit truncation of vector type
+D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainPixelShader.hlsl(31,13-37): warning X3206: 'dot': implicit truncation of vector type
+D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainPixelShader.hlsl(34,8-18): warning X3206: implicit truncation of vector type
+  
+  compilation object save succeeded; see D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MainPixelShader.cso
+D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainVertexShader.hlsl(28,16-37): warning X3206: 'mul': implicit truncation of vector type
+D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainVertexShader.hlsl(28,2-37): warning X3206: implicit truncation of vector type
+  
+  compilation object save succeeded; see D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MainVertexShader.cso
+  TextureHandler.cpp
+  Texture.cpp
+  Normals.cpp
+d:\grafiktillspel\mayaplugin\mayastreamer\normals.cpp(22): warning C4101: 'hr': unreferenced local variable
+  main.cpp
+d:\grafiktillspel\mayaplugin\mayastreamer\main.cpp(4): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  d:\grafiktillspel\mayaplugin\mayastreamer\main.cpp(4): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+  Linker.cpp
+  DirectX.cpp
+d:\grafiktillspel\mayaplugin\mayastreamer\directx.cpp(442): warning C4101: 'dataPtr': unreferenced local variable
+  Camera.cpp
+d:\grafiktillspel\mayaplugin\mayastreamer\camera.cpp(11): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\grafiktillspel\mayaplugin\mayastreamer\camera.cpp(134): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  MayaStreamer.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MayaStreamer.exe
+  MayaStreamer.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MayaStreamer.pdb (Partial PDB)
