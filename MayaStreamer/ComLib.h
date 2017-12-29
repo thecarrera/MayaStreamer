@@ -39,4 +39,3 @@ public:
 	size_t* head;
 	size_t* tail;
 };
-
