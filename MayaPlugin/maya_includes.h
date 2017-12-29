@@ -60,3 +60,35 @@
 #pragma comment(lib,"Foundation.lib")
 #pragma comment(lib,"OpenMaya.lib")
 #pragma comment(lib,"OpenMayaUI.lib")
+
+#include <maya/MItMeshVertex.h>
+#include <maya/MIOStream.h>
+#include <maya/MFloatPointArray.h>
+#include <maya/MItMeshPolygon.h>
+#include <maya/MItMeshEdge.h>
+#include<maya/MQuaternion.h>
+
+//to store vertex positions
+struct MyPointValues
+{
+	double x;
+	double y;
+	double z;
+	double w;
+};
+
+struct normals
+{
+
+};
+
+//texture coordinates
+struct UV
+{
+
+};
+
+struct transformMatrix
+{
+
+};

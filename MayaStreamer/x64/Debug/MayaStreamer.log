@@ -1,5 +1,2 @@
-﻿  Camera.cpp
-c:\users\bth\documents\github\mayastreamer\mayastreamer\camera.cpp(11): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\bth\documents\github\mayastreamer\mayastreamer\camera.cpp(134): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  MayaStreamer.vcxproj -> C:\Users\BTH\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaStreamer.exe
-  MayaStreamer.vcxproj -> C:\Users\BTH\Documents\GitHub\MayaStreamer\MayaStreamer\x64\Debug\MayaStreamer.pdb (Partial PDB)
+﻿  MayaStreamer.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\x64\Debug\MayaStreamer.exe
+  MayaStreamer.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\x64\Debug\MayaStreamer.pdb (Partial PDB)
