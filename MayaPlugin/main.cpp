@@ -7,37 +7,43 @@ void renderChangeCallback(const MString &str, void *clientData)
 	M3dView sceneView;
 	sceneView = sceneView.active3dView();
 	int numViews = sceneView.numberOf3dViews();
-	MGlobal::displayInfo(MString() + numViews);
+	MGlobal::displayInfo(MString("Views:") + numViews);
 	MDagPath camDag;
 	sceneView.getCamera(camDag);
 
+	MCallbackId CameraChangedId = MNodeMessage::addAttributeChangedCallback(
+		camDag.node(),
+		CameraChangedCallback,
+		)
+
+	if (res == MS::kSuccess)
+	{
+		if (myCallbackArray.append(nodeAddedId) == MS::kSuccess);
+	}
 
 
 	if (camDag.node().apiType() == MFn::kCamera)
 	{
 		MFnCamera cam = camDag.node();
-		MVector forwardVec;
-		MVector upVec;
-		MVector rightVec;
+		MFnTransform camTransform = cam.parent(0);
+		MMatrix mat = camTransform.transformation().asMatrix().matrix;
 
-		forwardVec = cam.viewDirection(MSpace::kObject);
-		upVec = cam.upDirection(MSpace::kObject);
-		rightVec = cam.rightDirection(MSpace::kObject);
+		MGlobal::displayInfo(MString("Cam:") + mat.matrix[0][0] + " " + mat.matrix[0][1] + " " + mat.matrix[0][2] + " " + mat.matrix[0][3]);
+		MGlobal::displayInfo(MString("Cam:") + mat.matrix[1][0] + " " + mat.matrix[1][1] + " " + mat.matrix[1][2] + " " + mat.matrix[1][3]);
+		MGlobal::displayInfo(MString("Cam:") + mat.matrix[2][0] + " " + mat.matrix[2][1] + " " + mat.matrix[2][2] + " " + mat.matrix[2][3]);
+		MGlobal::displayInfo(MString("Cam:") + mat.matrix[3][0] + " " + mat.matrix[3][1] + " " + mat.matrix[3][2] + " " + mat.matrix[3][3]);
 
-		MGlobal::displayInfo("forward");
-		MGlobal::displayInfo(MString() + forwardVec.x);
-		MGlobal::displayInfo(MString() + forwardVec.y);
-		MGlobal::displayInfo(MString() + forwardVec.z);
+		double ARO = cam.aspectRatio();
+		double FOV = cam.horizontalFieldOfView();
+		double FOV2 = cam.verticalFieldOfView();
+		double nPlane = cam.nearClippingPlane();
+		double fPlane = cam.farClippingPlane();
 
-		MGlobal::displayInfo("up");
-		MGlobal::displayInfo(MString() + upVec.x);
-		MGlobal::displayInfo(MString() + upVec.y);
-		MGlobal::displayInfo(MString() + upVec.z);
-
-		MGlobal::displayInfo("Right");
-		MGlobal::displayInfo(MString() + rightVec.x);
-		MGlobal::displayInfo(MString() + rightVec.y);
-		MGlobal::displayInfo(MString() + rightVec.z);
+		MGlobal::displayInfo(MString("Cam:") + ARO);
+		MGlobal::displayInfo(MString("Cam:") + FOV);
+		MGlobal::displayInfo(MString("Cam:") + FOV2);
+		MGlobal::displayInfo(MString("Cam:") + nPlane);
+		MGlobal::displayInfo(MString("Cam:") + fPlane);
 	}
 }
 
@@ -64,10 +70,13 @@ void nodeCreationCallback(MObject& node, void* clientData)
 		if (res == MS::kSuccess)
 		{
 			if (myCallbackArray.append(namechangeid) == MS::kSuccess);
-		}
-
-
+		}		
 	}
+
+}
+
+void CameraChangedCallback()
+{
 
 }
 
