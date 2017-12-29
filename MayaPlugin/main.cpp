@@ -24,20 +24,20 @@ void renderChangeCallback(const MString &str, void *clientData)
 		upVec = cam.upDirection(MSpace::kObject);
 		rightVec = cam.rightDirection(MSpace::kObject);
 
-		MGlobal::displayInfo("forward");
-		MGlobal::displayInfo(MString() + forwardVec.x);
-		MGlobal::displayInfo(MString() + forwardVec.y);
-		MGlobal::displayInfo(MString() + forwardVec.z);
+		//MGlobal::displayInfo("forward");
+		//MGlobal::displayInfo(MString() + forwardVec.x);
+		//MGlobal::displayInfo(MString() + forwardVec.y);
+		//MGlobal::displayInfo(MString() + forwardVec.z);
 
-		MGlobal::displayInfo("up");
-		MGlobal::displayInfo(MString() + upVec.x);
-		MGlobal::displayInfo(MString() + upVec.y);
-		MGlobal::displayInfo(MString() + upVec.z);
+		//MGlobal::displayInfo("up");
+		//MGlobal::displayInfo(MString() + upVec.x);
+		//MGlobal::displayInfo(MString() + upVec.y);
+		//MGlobal::displayInfo(MString() + upVec.z);
 
-		MGlobal::displayInfo("Right");
-		MGlobal::displayInfo(MString() + rightVec.x);
-		MGlobal::displayInfo(MString() + rightVec.y);
-		MGlobal::displayInfo(MString() + rightVec.z);
+		//MGlobal::displayInfo("Right");
+		//MGlobal::displayInfo(MString() + rightVec.x);
+		//MGlobal::displayInfo(MString() + rightVec.y);
+		//MGlobal::displayInfo(MString() + rightVec.z);
 	}
 }
 
@@ -154,6 +154,7 @@ bool OutputMeshTextureCoords(MObject& obj)
 }
 
 
+//TRANSFORMATIONER
 void getTransfromData(MObject& object)
 {
 	MFnTransform obj(object);
@@ -226,15 +227,37 @@ void MeshName(MObject& object)
 			MGlobal::displayInfo(display);
 			getTransfromData(object);
 
-			if (TextureObj.hasFn(MFn::kFileTexture))
-			{
-				//spara texture path
-			}
+			//FIND TEXTURES
+			//if (TextureObj.hasFn(MFn::kFileTexture))
+			//{
+			//	MString TextureFileName = MFn::kFileTexture; 
+			//	//spara texture path
+			//}
 		}
 
 		it.next();
 	}
 
+}
+
+void TexturePath()
+{
+	MItDependencyNodes iterator(MFn::kFileTexture); 
+
+	MObjectArray filenames; 
+
+	while (!iterator.isDone())
+	{
+		MFnDependencyNode fn(iterator.item()); 
+
+		filenames.append(iterator.item()); 
+		MPlug FullPath = fn.findPlug("ftn"); 
+		MString texturePath; 
+		FullPath.getValue(texturePath); 
+		iterator.next(); 
+
+		MGlobal::displayInfo(texturePath); 
+	}
 }
 
 
@@ -286,6 +309,7 @@ void ChangedAttribute(MNodeMessage::AttributeMessage msg, MPlug &plug, MPlug &ot
 			outputMeshNormals(myMesh);
 			OutputMeshTextureCoords(myMesh);
 			MeshName(myMesh);
+			TexturePath(); 
 		}
 
 		//MGlobal::displayInfo(plug.node().apiTypeStr());
@@ -305,7 +329,6 @@ void ChangedAttribute(MNodeMessage::AttributeMessage msg, MPlug &plug, MPlug &ot
 			MColor color;
 			color = ColorValues.color();
 			MString displayColor;
-
 			displayColor += color.r;
 			displayColor += " ";
 			displayColor += color.g;

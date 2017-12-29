@@ -1,7 +1,7 @@
 ﻿  main.cpp
-d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(279): warning C4101: 'VertArr': unreferenced local variable
-d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(359): warning C4390: ';': empty controlled statement found; is this the intent?
-d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(395): warning C4390: ';': empty controlled statement found; is this the intent?
-d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(406): warning C4390: ';': empty controlled statement found; is this the intent?
+d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(302): warning C4101: 'VertArr': unreferenced local variable
+d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(382): warning C4390: ';': empty controlled statement found; is this the intent?
+d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(418): warning C4390: ';': empty controlled statement found; is this the intent?
+d:\grafiktillspel\mayaplugin\mayaplugin\main.cpp(429): warning C4390: ';': empty controlled statement found; is this the intent?
   MayaPlugin.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\x64\Debug\MayaPlugin.mll
   MayaPlugin.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\x64\Debug\MayaPlugin.pdb (Partial PDB)
