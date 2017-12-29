@@ -1,9 +1,2 @@
-﻿  main.cpp
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(4): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(4): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(123): error C2084: function 'int wWinMain(HINSTANCE,HINSTANCE,LPWSTR,int)' already has a body
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(9): note: see previous definition of 'wWinMain'
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(162): error C2084: function 'HWND InitWindow(HMODULE)' already has a body
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(48): note: see previous definition of 'InitWindow'
-c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(208): error C2084: function 'LRESULT WndProc(HWND,UINT,WPARAM,LPARAM)' already has a body
-  c:\users\jonte\documents\github\mayastreamer\mayastreamer\mayastreamer\main.cpp(94): note: see previous definition of 'WndProc'
+﻿  MayaStreamer.vcxproj -> C:\Users\BTH\Documents\GitHub\MayaStreamer\MayaStreamer\Debug\MayaStreamer.exe
+  MayaStreamer.vcxproj -> C:\Users\BTH\Documents\GitHub\MayaStreamer\MayaStreamer\Debug\MayaStreamer.pdb (Partial PDB)
