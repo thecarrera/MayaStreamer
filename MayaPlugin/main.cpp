@@ -6,12 +6,8 @@ void renderChangeCallback(const MString &str, void *clientData)
 {
 	M3dView sceneView;
 	sceneView = sceneView.active3dView();
-	int numViews = sceneView.numberOf3dViews();
-	MGlobal::displayInfo(MString() + numViews);
 	MDagPath camDag;
 	sceneView.getCamera(camDag);
-
-
 
 	if (camDag.node().apiType() == MFn::kCamera)
 	{
@@ -300,8 +296,7 @@ void ChangedAttribute(MNodeMessage::AttributeMessage msg, MPlug &plug, MPlug &ot
 
 		MPoint p[8];
 		double VertArr[4];
-
-
+	
 		if (plug.node().apiType() == MFn::kMesh)
 		{
 			MGlobal::displayInfo("Mesh Attribute Changed");
@@ -309,8 +304,10 @@ void ChangedAttribute(MNodeMessage::AttributeMessage msg, MPlug &plug, MPlug &ot
 			outputMeshNormals(myMesh);
 			OutputMeshTextureCoords(myMesh);
 			MeshName(myMesh);
-			TexturePath(); 
+			TexturePath();
 		}
+		
+	}
 
 		//MGlobal::displayInfo(plug.node().apiTypeStr());
 
@@ -354,7 +351,7 @@ void ChangedAttribute(MNodeMessage::AttributeMessage msg, MPlug &plug, MPlug &ot
 			displayColor += color.b;
 
 		}
-	}
+	
 }
 
 void nameChangeCallback(MObject& node, const MString &string, void* clientData)
@@ -406,6 +403,10 @@ EXPORT MStatus initializePlugin(MObject obj) {
 	MObject MObject;
 
 	MCallbackId idChanged = MNodeMessage::addAttributeChangedCallback(MObject, ChangedAttribute, NULL, &res);
+	if (res == MS::kSuccess)
+	{
+		if (myCallbackArray.append(idChanged) == MS::kSuccess);
+	}
 
 	MCallbackId nodeAddedId = MDGMessage::addNodeAddedCallback(
 		nodeCreationCallback,
@@ -417,6 +418,8 @@ EXPORT MStatus initializePlugin(MObject obj) {
 	{
 		if (myCallbackArray.append(nodeAddedId) == MS::kSuccess);
 	}
+
+
 
 	MCallbackId camTranslateId = MUiMessage::add3dViewPostRenderMsgCallback(
 		"modelPanel4",
