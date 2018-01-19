@@ -1,25 +1,2 @@
-﻿D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainPixelShader.hlsl(28,21-49): warning X3206: 'reflect': implicit truncation of vector type
-D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainPixelShader.hlsl(31,13-37): warning X3206: 'dot': implicit truncation of vector type
-D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainPixelShader.hlsl(34,8-18): warning X3206: implicit truncation of vector type
-  
-  compilation object save succeeded; see D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MainPixelShader.cso
-D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainVertexShader.hlsl(28,16-37): warning X3206: 'mul': implicit truncation of vector type
-D:\GrafikTillSpel\MayaPlugin\MayaStreamer\MainVertexShader.hlsl(28,2-37): warning X3206: implicit truncation of vector type
-  
-  compilation object save succeeded; see D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MainVertexShader.cso
-  TextureHandler.cpp
-  Texture.cpp
-  Normals.cpp
-d:\grafiktillspel\mayaplugin\mayastreamer\normals.cpp(22): warning C4101: 'hr': unreferenced local variable
-  main.cpp
-d:\grafiktillspel\mayaplugin\mayastreamer\main.cpp(4): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
-  d:\grafiktillspel\mayaplugin\mayastreamer\main.cpp(4): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
-  Linker.cpp
-  DirectX.cpp
-d:\grafiktillspel\mayaplugin\mayastreamer\directx.cpp(442): warning C4101: 'dataPtr': unreferenced local variable
-  Camera.cpp
-d:\grafiktillspel\mayaplugin\mayastreamer\camera.cpp(11): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-d:\grafiktillspel\mayaplugin\mayastreamer\camera.cpp(134): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  MayaStreamer.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MayaStreamer.exe
-  MayaStreamer.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\Debug\MayaStreamer.pdb (Partial PDB)
+﻿  MayaStreamer.vcxproj -> C:\Users\BTH\Documents\GitHub\MayaStreamer\MayaStreamer\Debug\MayaStreamer.exe
+  MayaStreamer.vcxproj -> C:\Users\BTH\Documents\GitHub\MayaStreamer\MayaStreamer\Debug\MayaStreamer.pdb (Partial PDB)

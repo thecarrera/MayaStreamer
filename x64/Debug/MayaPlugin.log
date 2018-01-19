@@ -1,2 +1,17 @@
-﻿  MayaPlugin.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\x64\Debug\MayaPlugin.mll
-  MayaPlugin.vcxproj -> D:\GrafikTillSpel\MayaPlugin\MayaStreamer\x64\Debug\MayaPlugin.pdb (Partial PDB)
+﻿  main.cpp
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(14): error C2086: 'MDagPath camDag': redefinition
+  c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(9): note: see declaration of 'camDag'
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(22): error C2065: 'res': undeclared identifier
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(24): error C2065: 'nodeAddedId': undeclared identifier
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(366): error C2059: syntax error: '<<'
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(369): error C2059: syntax error: '=='
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(372): error C2059: syntax error: '>>'
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(373): error C2143: syntax error: missing ';' before '}'
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(373): error C2059: syntax error: '}'
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(376): error C2143: syntax error: missing ';' before '{'
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(376): error C2447: '{': missing function header (old-style formal list?)
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(391): error C2065: 'nameChangeCallback': undeclared identifier
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(397): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(429): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(440): warning C4390: ';': empty controlled statement found; is this the intent?
+c:\users\bth\documents\github\mayastreamer\mayaplugin\main.cpp(453): warning C4390: ';': empty controlled statement found; is this the intent?

@@ -24,8 +24,8 @@ void Camera::createCamera()
 	DirectX::XMStoreFloat3(&this->lookAt, lookTo);
 	DirectX::XMStoreFloat3(&this->upVec, upVec);
 
-	float FOV = { 0.45f * DirectX::XM_PI };
 	float ARO = (float)WIDTH / (float)HEIGHT;
+	float FOV = { 0.45f * DirectX::XM_PI };
 	float nPlane = 0.1f;
 	float fPlane = 200.0f;
 
